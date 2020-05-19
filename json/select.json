@@ -1,0 +1,30 @@
+{
+  "result": [
+    {
+      "label": "分组一",
+      "items": [
+        {
+          "text": "分组选项一",
+          "value": 1
+        },
+        {
+          "text": "分组选项二",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "text": "选项一",
+      "value": 4
+    },
+    {
+      "text": "选项二",
+      "value": 5
+    },
+    {
+      "text": "选项三",
+      "value": 6
+    }
+  ],
+  "success": true
+}

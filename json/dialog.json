@@ -1,0 +1,61 @@
+{
+  "result": {
+    "communityHospital": {
+      "address": "娄星区",
+      "areaName": "娄星区",
+      "cityName": "娄底市",
+      "createTime": 1545287150000,
+      "createUser": "2c939c42642a9f0601642a9f70060003",
+      "id": "2c939c4267c58be00167ca4aab330026",
+      "lat": "27.699668",
+      "lng": "112.005748",
+      "memberCount": 0,
+      "modifyTime": 1545903946000,
+      "modifyUser": "2c939c42642a9f0601642a9f70060003",
+      "name": "娄底1号诊所",
+      "provinceName": "湖南省",
+      "publishStatus": "ONLINE",
+      "publishStatusVo": {
+        "name": "在线",
+        "value": "ONLINE"
+      },
+      "signInPic": "2c939c4267c58be00167ca4af6080027",
+      "status": "NORMAL"
+    },
+    "createTime": 1551092474000,
+    "createUser": "2c939c42642a9f0601642a9f70060003",
+    "deviceCode": "xb0000002",
+    "deviceModel": {
+      "auth": true,
+      "brand": "雅思",
+      "createTime": 1529743824000,
+      "createUser": "2c939c42642a9f0601642a9f70060003",
+      "deviceCode": "xb",
+      "deviceName": "细胞排毒治疗仪",
+      "deviceRichText": {
+        "htmlContent": "<p>细胞排毒</p>",
+        "id": "2c939c42642bc9ba01642bd65625000d"
+      },
+      "deviceType": "理疗康复类",
+      "disable": false,
+      "id": "2c939c42642bc9ba01642bd65635000e",
+      "interfaceCoding": "TCM",
+      "model": "xbpd0006",
+      "modifyTime": 1533712762000,
+      "modifyUser": "2c939c42642a9f0601642a9f70060003",
+      "status": "NORMAL",
+      "type": "PHYSIOTHERAPY",
+      "typeVo": {
+        "name": "理疗康复类",
+        "value": "PHYSIOTHERAPY"
+      }
+    },
+    "id": "2c939c42690b0cb301692450e1a00090",
+    "memo": "",
+    "modifyTime": 1551092582000,
+    "modifyUser": "2c939c42642a9f0601642a9f70060003",
+    "qrcodePic": "2c939c42690b0cb30169245286160091",
+    "status": "NORMAL"
+  },
+  "success": true
+}

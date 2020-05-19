@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>后台管理系统</title>
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../public/css/animate.css" rel="stylesheet">
+    <link href="../public/css/style.css" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+<div id="wrapper">
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="nav-close">
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span><img alt="image" class="img-circle" src="../public/img/profile_small.jpg"/></span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">Beaut-zihan</strong>
+                                </span>
+                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="form_avatar.html">修改头像</a></li>
+                            <li><a href="profile.html">个人资料</a></li>
+                            <li><a href="contacts.html">联系我们</a></li>
+                            <li><a href="mailbox.html">信箱</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">安全退出</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">H+
+                    </div>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <i class="fa fa-columns"></i>
+                        <span class="nav-label">首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">商城</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="./shop-goods.html">商品管理</a></li>
+                        <li><a href="./shop-order.html">订单管理</a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="javascript: void(0);">
+                        <i class="fa fa-edit"></i>
+                        <span class="nav-label">三级菜单</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li><a href="javascript: void(0);">三级菜单(1)</a></li>
+                        <li><a href="javascript: void(0);">三级菜单(2)</a></li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <span class="nav-label">三级菜单(3)</span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level collapse">
+                                <li><a href="javascript: void(0);">三级菜单(3-1)</a></li>
+                                <li><a href="javascript: void(0);">三级菜单(3-2)</a></li>
+                                <li><a href="javascript: void(0);">三级菜单(3-3)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--左侧导航结束-->
+    <!--右侧部分开始-->
+    <div id="page-wrapper" class="gray-bg dashbard-1" style="overflow: hidden">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <h2 class="my-theme">后台管理系统</h2>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown hidden-xs">
+                        <a class="right-sidebar-toggle" aria-expanded="false">
+                            <i class="fa fa-tasks"></i> 注销
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row content-tabs">
+            <div class="my-crumb" style="padding-left: 20px">
+                <a href="./index.html">首页</a>
+                <span> > </span>
+                <a href="javascript: void(0);">首页</a>
+            </div>
+        </div>
+        <div class="row J_mainContent animated fadeInRight" id="content-main" style="overflow: auto">
+            <div class="wrapper-content" id="wrap-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>拖动面板</h5>
+                                <div class="ibox-tools">
+                                    <label class="label label-primary">可拖动</label>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h2>
+                                    版本 1.2.1 中的新功能
+                                </h2>
+                                <p>
+                                    攻城狮们夜以继日的疯狂加班，毛都快掉光了，解决了下列问题，赶快升级吧！
+                                    <br>1.新版智慧公交，增加定位、地图、预估到达时间等功能。
+                                    <br>2.丰富幼儿故事资源，宝宝爱学，妈妈放心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="ibox float-e-margins no-drop">
+                            <div class="ibox-title">
+                                <h5>拖动面板</h5>
+                                <div class="ibox-tools">
+                                    <label class="label label-danger">不可拖动</label>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h2>
+                                    版本 1.2.1 中的新功能
+                                </h2>
+                                <p>
+                                    攻城狮们夜以继日的疯狂加班，毛都快掉光了，解决了下列问题，赶快升级吧！
+                                    <br>1.新版智慧公交，增加定位、地图、预估到达时间等功能。
+                                    <br>2.丰富幼儿故事资源，宝宝爱学，妈妈放心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>拖动面板</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="draggable_panels.html#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="draggable_panels.html#">选项1</a>
+                                        </li>
+                                        <li><a href="draggable_panels.html#">选项2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h2>
+                                    版本 1.2.1 中的新功能
+                                </h2>
+                                <p>
+                                    攻城狮们夜以继日的疯狂加班，毛都快掉光了，解决了下列问题，赶快升级吧！
+                                    <br>1.新版智慧公交，增加定位、地图、预估到达时间等功能。
+                                    <br>2.丰富幼儿故事资源，宝宝爱学，妈妈放心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>拖动面板</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="draggable_panels.html#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="draggable_panels.html#">选项1</a>
+                                        </li>
+                                        <li><a href="draggable_panels.html#">选项2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h2>
+                                    版本 1.2.1 中的新功能
+                                </h2>
+                                <p>
+                                    攻城狮们夜以继日的疯狂加班，毛都快掉光了，解决了下列问题，赶快升级吧！
+                                    <br>1.新版智慧公交，增加定位、地图、预估到达时间等功能。
+                                    <br>2.丰富幼儿故事资源，宝宝爱学，妈妈放心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="ibox float-e-margins no-drop">
+                            <div class="ibox-title">
+                                <h5>拖动面板</h5>
+                                <div class="ibox-tools">
+                                    <label class="label label-danger">不可拖动</label>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h2>
+                                    版本 1.2.1 中的新功能
+                                </h2>
+                                <p>
+                                    攻城狮们夜以继日的疯狂加班，毛都快掉光了，解决了下列问题，赶快升级吧！
+                                    <br>1.新版智慧公交，增加定位、地图、预估到达时间等功能。
+                                    <br>2.丰富幼儿故事资源，宝宝爱学，妈妈放心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>拖动面板</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="draggable_panels.html#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="draggable_panels.html#">选项1</a>
+                                        </li>
+                                        <li><a href="draggable_panels.html#">选项2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <h2>
+                                    版本 1.2.1 中的新功能
+                                </h2>
+                                <p>
+                                    攻城狮们夜以继日的疯狂加班，毛都快掉光了，解决了下列问题，赶快升级吧！
+                                    <br>1.新版智慧公交，增加定位、地图、预估到达时间等功能。
+                                    <br>2.丰富幼儿故事资源，宝宝爱学，妈妈放心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<h1 data-toggle="modal" data-target="#myModal">myModal</h1>-->
+                <!--<h1>index</h1>-->
+                <!--<h1>index</h1>-->
+                <!--<h1>index</h1>-->
+
+                <!--<div class="clearfix">-->
+                    <!--<div class="my-webupload">-->
+                        <!--<div class="my-img"><img src="../public/img/profile_small.jpg" alt=""></div>-->
+                        <!--<div class="my-img-close"><i class="fa fa-times-circle"></i></div>-->
+                    <!--</div>-->
+                    <!--<div class="my-webupload">-->
+                        <!--<div class="my-img"><img src="../public/img/webuploader.png" alt=""></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group" id="uploader">-->
+                    <!--<label class="col-sm-3 p-r-10 control-label"><span class="text-danger">*&nbsp;</span>上传图片:</label>-->
+                    <!--<div class="col-sm-8 p-l-5">-->
+                        <!--<div class="clearfix">-->
+                            <!--<div id="thelist" class="uploader-list"></div>-->
+                            <!--<div class="webuploadwrap"><img src="../public/img/profile_small.jpg" alt=""></div>-->
+                            <!--<div class="webuploadwrap" id="picker"><img src="../public/img/webuploader.png" alt=""></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                &copy; 2019-2020 <a href="#" target="_blank">厦门医管家医疗科技有限公司</a>
+            </div>
+        </div>
+    </div>
+    <!--右侧部分结束-->
+</div>
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog animated fadeInDown">
+        <div class="my-modal-close" data-dismiss="modal"><i class="fa fa-times-circle"></i></div>
+        <div class="modal-content">
+            <div class="modal-header">新增</div>
+            <div class="modal-body clearfix">
+                <form class="form-horizontal m-t" id="myForm">
+                    <div class="form-group">
+                        <label class="col-sm-3 p-r-10 control-label"><span class="text-danger">*&nbsp;</span>姓氏:</label>
+                        <div class="col-sm-8 p-l-5">
+                            <input type="text" class="form-control" name="firstname" placeholder="请输入姓名">
+                            <span class="help-block m-b-none">
+                                <i class="fa fa-info-circle"></i>&nbsp;这里写点提示的内容
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 p-r-10 control-label"><span class="text-danger">*&nbsp;</span>上传图片:</label>
+                        <div class="col-sm-8 p-l-5">
+                            <div class="clearfix">
+                                <div class="my-webupload">
+                                    <div class="my-img"><img src="../public/img/profile_small.jpg" alt=""></div>
+                                    <div class="my-img-close"><i class="fa fa-times-circle"></i></div>
+                                </div>
+                                <div class="my-webupload" id="picker">
+                                    <div class="my-img"><img src="../public/img/webuploader.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-w-m btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-w-m btn-primary" id="submit">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 全局js -->
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/sea.js"></script>
+<script src="../public/js/seajs-css.js"></script>
+<!--<script src="../public/js/content.js"></script>-->
+<script src="../public/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!--<script src="../public/js/plugins/webuploader/webuploader.min.js"></script>-->
+<script>
+    seajs.config({
+        base: '',
+        alias: {
+            metisMenu: '../public/js/jquery.metisMenu.js',
+            slimscroll: '../public/js/jquery.slimscroll.min.js',
+            hplus: '../public/js/hplus',
+            dataTables: '../public/js/plugins/dataTables/dataTables.bootstrap.js',
+            validate: '../public/js/plugins/validate/jquery.validate.min.js',
+            layer: '../public/js/plugins/layer/layer.min.js',
+            laydate: '../public/js/plugins/layer/laydate/laydate.js',
+            toastr: '../public/js/plugins/toastr/toastr.min.js',
+            toastrcss: '../public/css/plugins/toastr/toastr.min.css',
+            fancybox: '../public/js/plugins/fancybox/jquery.fancybox.js',
+            fancyboxcss: '../public/js/plugins/fancybox/jquery.fancybox.css'
+        }
+    });
+    seajs.use(['metisMenu', 'slimscroll', 'hplus', '../script/index'])
+</script>
+</body>
+</html>

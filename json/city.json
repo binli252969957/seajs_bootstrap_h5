@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "result": [{
+    "value": 1,
+    "text": "长沙"
+  }, {
+    "value": 2,
+    "text": "娄底"
+  }, {
+    "value": 3,
+    "text": "郴州"
+  }, {
+    "value": 4,
+    "text": "湘西"
+  }, {
+    "value": 5,
+    "text": "其它"
+  }]
+}

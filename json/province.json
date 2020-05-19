@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "result": [{
+    "value": 1,
+    "text": "湖南"
+  }, {
+    "value": 2,
+    "text": "福建"
+  }, {
+    "value": 3,
+    "text": "江西"
+  }, {
+    "value": 4,
+    "text": "湖北"
+  }, {
+    "value": 5,
+    "text": "重庆"
+  }]
+}
